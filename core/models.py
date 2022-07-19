@@ -13,7 +13,7 @@ class Categoria(models.Model):
 
 class Editora(models.Model):
     nome = models.CharField(max_length=100)
-    site = models.URLField()
+    site = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.nome
@@ -21,7 +21,7 @@ class Editora(models.Model):
 
 class Autor(models.Model):
     nome = models.CharField(max_length=255)
-    email = models.EmailField()
+    email = models.EmailField(blank=True, null=True)
 
     def __str__(self):
         return self.nome
