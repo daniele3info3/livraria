@@ -33,4 +33,4 @@ urlpatterns = [
     path('api/media/', include(media_router .urls)),
 ]
 
-# urlpatterns += static(settings.MEDIA_ENDPOINT, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_ENDPOINT, document_root=settings.MEDIA_ROOT)
