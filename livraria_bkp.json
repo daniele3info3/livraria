@@ -1,0 +1,73 @@
+[
+{
+  "model": "core.autor",
+  "pk": 1,
+  "fields": {
+    "nome": "Ned Vizzini",
+    "email": "ned@gmail.com"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 1,
+  "fields": {
+    "descricao": "Romance/Comédia"
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 1,
+  "fields": {
+    "nome": "Leya",
+    "site": null
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 1,
+  "fields": {
+    "titulo": "Uma história meio que engraçada",
+    "isbn": "9780786851973",
+    "quantidade": 278,
+    "preco": "35.65",
+    "categoria": 1,
+    "editora": 1,
+    "capa": 1,
+    "autores": [
+      1
+    ]
+  }
+},
+{
+  "model": "core.usuario",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$A9jwaIdRU4ImiM1Dn0kxUw$at0y2A7o4mV6rZYpXW58wMRfH0bdgjEnkJRAp8PiVW0=",
+    "last_login": "2022-10-10T16:58:55.276Z",
+    "is_superuser": true,
+    "username": "daniele",
+    "first_name": "",
+    "last_name": "",
+    "email": "silva.daniele.ti@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-03T17:48:17Z",
+    "cpf": "35258964202",
+    "telefone": null,
+    "data_nascimento": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "media.image",
+  "pk": 1,
+  "fields": {
+    "attachment_key": "0fb28842-a83c-4519-8732-564c10d76d8b",
+    "public_id": "8cf41a70-4c14-45d3-96a3-0d4e6319357d",
+    "file": "images/8cf41a70-4c14-45d3-96a3-0d4e6319357d.jpg",
+    "description": "",
+    "uploaded_on": "2022-10-06T19:23:01.587Z"
+  }
+}
+]

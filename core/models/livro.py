@@ -1,3 +1,6 @@
+from asyncio.windows_events import NULL
+from email.policy import default
+from black import nullcontext
 from django.db import models
 
 from core.models import Autor, Categoria, Editora
@@ -6,9 +9,9 @@ from media.models import Image
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=255)
-    isbn = models.CharField(max_length=32)
-    quantidade = models.IntegerField()
-    preco = models.DecimalField(max_digits=7, decimal_places=2)
+    isbn = models.CharField(max_length=32, null=True, blank=True)
+    quantidade = models.IntegerField(blank=True, null=True)
+    preco = models.DecimalField(max_digits=7, decimal_places=2, default=0, blank=True, null=True)
     categoria = models.ForeignKey(
         Categoria, on_delete=models.PROTECT, related_name="livros"
     )
