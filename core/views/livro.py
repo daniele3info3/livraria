@@ -1,10 +1,11 @@
 from rest_framework.viewsets import ModelViewSet
 
+from core.models import Livro
+from core.serializers import LivroDetailSerializer, LivroSerializer
+
 # from rest_framework.permissions import IsAuthenticated
 
 
-from core.models import Livro
-from core.serializers import LivroSerializer, LivroDetailSerializer
 
 class LivroViewSet(ModelViewSet):
     queryset = Livro.objects.all()
