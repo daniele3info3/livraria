@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 # Register your models here.
 from core.models import Autor, Categoria, Editora, Livro, Usuario
 
-
+@admin.register(Usuario)
 class UsuarioAdmin(UserAdmin):
     fieldsets = (
         (None, {"fields": ("username", "password")}),
